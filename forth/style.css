@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    padding: 40px 40px;
+    align-items: center;
+    font-size: 24px;
+}
+
+#lmenu {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+#lmenu i {
+    font-size: 50px;
+}
+
+#lmenu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#rmenu {
+    display: flex;
+    gap: 50px;
+}
+
+#rmenu a {
+    color: black;
+    text-decoration: none;
+}
+
+#left {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 60% 0%, 40% 100%, 0% 100%);
+    background-color: #B6DAE6;
+}
+
+#left #content {
+    position: absolute;
+    color: #fff;
+    left: 15%;
+    top: 20%;
+}
+
+#left h1 {
+    font-size: 70px;
+}
+
+button {
+    padding: 13px;
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 3px solid white
+}
+
+
+
+#right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    background-color: #F1E5E5;
+}
+
+#left img {
+    position: absolute;
+    bottom: 10px;
+    left: 8%;
+    object-fit: fill;
+    height: 50%;
+}
+
+#right img {
+    position: absolute;
+    bottom: 7%;
+    left: 55%;
+    object-fit: fill;
+    height: 56%;
+}
+
+#right #content2 {
+    position: absolute;
+    color: #fff;
+    left: 65%;
+    top: 37%;
+}
+
+#right h2 {
+    font-size: 90px;
+    font-weight: 400;
+    color: black;
+}
+
+#buttonNew {
+    padding: 13px;
+    font-size: 20px;
+    color: #F1E5E5;
+    background: white;
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 3px solid white;
+    position: relative;
+    left: 10%;
+    z-index: 999;
+}

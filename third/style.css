@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/bg.jpg);
+    background-position: 0% 30%;
+    background-size: cover;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    height: 90px;
+    width: 100%;
+    font-size: 22px;
+}
+
+#nav #nlink {
+    display: flex;
+    gap: 30px;
+}
+
+#nlink a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+
+#nlink #active::before {
+    content: "";
+    width: 30%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#nav i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+#nav h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    color: #fff;
+
+}
+
+#content {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 40%;
+    height: 300px;
+}
+
+#content h6 {
+    font-size: 30px;
+    position: relative;
+    color: #fff;
+}
+
+#content h6::after {
+    content: "/05";
+    font-size: 15px;
+    position: absolute;
+    top: 4px;
+}
+
+#content h1 {
+    font-size: 80px;
+    line-height: 1;
+    margin-top: 30px;
+    color: #fff;
+}
+
+#text {
+    display: flex;
+    gap: 30px;
+    align-items: first baseline;
+    margin-top: 20px;
+    color: #fff;
+}
+
+#line {
+    width: 200px;
+    height: 2px;
+    background-color: #fff;
+}
+
+#text p {
+    width: 60%;
+}
+
+#footer {
+    width: 70%;
+    height: 130px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cube {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+.sec h5 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.sec p {
+    font-size: 14px;
+    color: gray;
+}
