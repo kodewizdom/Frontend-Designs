@@ -40,18 +40,19 @@ body {
     object-position: center;
 }
 
-#card h5{
+#card h5 {
     color: red;
     font-size: 25px;
 }
-#card p{
+
+#card p {
     color: rgb(85, 75, 75);
     font-size: 17px;
     font-weight: 600;
 }
 
-#card button{
-    padding:8px 20px;
+#card button {
+    padding: 8px 20px;
     border-radius: 50px;
     background-color: rgb(65, 166, 225);
     color: #fff;

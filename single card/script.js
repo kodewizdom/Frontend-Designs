@@ -1,18 +1,16 @@
-var btn = document.querySelector("button");
-var h5 = document.querySelector("h5");
+var friendBtn = document.getElementById("friendBtn");
+var statusH5 = document.querySelector(".status");
 
-var flag = 0;
-
-btn.addEventListener("click", function () {
-    if (flag == 0) {
-        h5.innerHTML = "Friends";
-        h5.style.color = "green";
-        btn.innerHTML="Remove Friend"
-        flag = 1;
+friendBtn.addEventListener("click", function () {
+    if (statusH5.textContent === "Stranger") {
+        updateFriendStatus("Friends", "green", "Remove Friend");
     } else {
-        h5.innerHTML = "Stranger";
-        h5.style.color = "red";
-        btn.innerHTML="Add Friend"
-        flag = 0;
+        updateFriendStatus("Stranger", "red", "Add Friend");
     }
-})
+});
+
+function updateFriendStatus(newStatus, color, buttonText) {
+    statusH5.textContent = newStatus;
+    statusH5.style.color = color;
+    friendBtn.textContent = buttonText;
+}
